@@ -10,8 +10,6 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 # < messages[0]["content"] >
 completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
-    messages=[{"role": "user", "content": "Who are your Top 5 rappers of all time?"}]
+    messages=[{"role": "user", "content": "How are you?"}]
 )
 print(completion.choices[0].message.content)
-
-yo = {"what": "up", "peep":"hle"}
