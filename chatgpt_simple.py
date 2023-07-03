@@ -1,9 +1,14 @@
+import os
 import openai
+from dotenv import load_dotenv
 
-openai.api_key = "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"
+load_dotenv()
+
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[{"role": "user", "content": "Give me your best dad joke!"}]
 )
 print(completion.choices[0].message.content)
+
