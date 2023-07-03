@@ -7,6 +7,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 messages = []
 system_msg = input("What type of chatbot would you like to create?\n")
+# messages.append({"role": "system", "content": system_msg})
 messages.append({"role": "system", "content": system_msg})
 
 print("Your new assistant is ready!")
