@@ -2,6 +2,9 @@ import doctest
 
 
 def main():
+    """
+    idk
+    """
     pass
 
 main()
