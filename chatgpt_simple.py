@@ -1,7 +1,6 @@
-from dotenv import load_dotenv
+import dotenv; dotenv.load_dotenv()
 import openai, os
 
-load_dotenv()
 
 # Let's connect our Python script to an OpenAI account.
 openai.api_key = os.getenv("OPENAI_API_KEY")
