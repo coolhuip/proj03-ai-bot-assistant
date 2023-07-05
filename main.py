@@ -3,7 +3,7 @@ import doctest
 
 def main():
     """
-    idk
+    This is the docstring for the main() function.
     """
     pass
 
